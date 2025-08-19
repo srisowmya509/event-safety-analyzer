@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Safety Video Upload</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: linear-gradient(to right, #00CFFF, #0066FF); display:flex; justify-content:center; align-items:center; height:100vh; margin:0; color:white; }
+    .container { background:#001F3F; padding:30px; border-radius:12px; width:400px; text-align:center; }
+    h2 { margin-bottom:20px; }
+    input[type="file"] { margin:15px 0; padding:10px; border-radius:8px; width:100%; }
+    button { background:#00CFFF; color:#fff; border:none; padding:12px 20px; font-size:16px; border-radius:8px; cursor:pointer; }
+    button:hover { background:#007ACC; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Upload Event Video</h2>
+    <form action="/" method="post" enctype="multipart/form-data">
+      <input type="file" name="video" accept="video/*" required>
+      <br>
+      <button type="submit">Upload & Analyze</button>
+    </form>
+  </div>
+</body>
+</html>
+
+
+
+
